@@ -74,9 +74,9 @@ If you click predict button without uploading the image it will prompt following
 
 ![image](https://user-images.githubusercontent.com/124141023/216219616-4b18eb42-dc64-4c2a-a7e2-f8382285810d.png)
 
-If you upload an image other than MNIST dataset or image with improrer dimensions it will return you following message on clicking predict button:
+If you upload an image other than MNIST dataset or image with improrer dimensions it will return invalid_image.html which print following message on clicking predict button:
 
-![image](https://user-images.githubusercontent.com/124141023/216220821-001b95d9-2a6f-4f93-b3aa-c8683ac8c53f.png)
+![image](https://user-images.githubusercontent.com/124141023/216280344-5f87a7e1-3679-4f68-9a5e-b32c20b2ae71.png)
 
 
 The images to upload can be found in "mnist_png" folder of this repo. Otherwise, you can go to https://huggingface.co/datasets/severo/mnist and download the image for testing.
