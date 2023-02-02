@@ -98,7 +98,7 @@ def predict():
         image_data = base64.b64encode(buffered.getvalue()).decode("utf-8")
         return render_template('./prediction.html', prediction=prediction, image_data=image_data)
     except Exception as e:
-        return "Please upload a valid image file."
+        return render_template('./invalid_image.html')
 
 
 
