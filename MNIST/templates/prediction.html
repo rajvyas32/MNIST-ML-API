@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MNIST Model API</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 50px;
+      }
+      .prediction-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .prediction-section img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      .prediction-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .back-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MNIST Model API</h1>
+  
+    <div class="prediction-section">
+     <h2>Your image is</h2> 
+     <img src="data:image/png;base64,{{ image_data }}" alt="Uploaded Image" style="width:100px;height:100px;">
+      <h2>The predicted number is: {{ prediction }}</h2>
+      <a href="{{ url_for('index') }}" class="back-button">Back to Home</a>
+    </div>
+  </body>
+</html>
